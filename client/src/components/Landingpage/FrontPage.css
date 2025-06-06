@@ -7,6 +7,7 @@
   width: 100%;
   overflow: hidden !important;
 }
+
 .firsttagline {
   font-size: 2.6rem;
   font-weight: 600;
@@ -28,6 +29,8 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+  top: 130px;
 }
 
 @media (max-width: 768px){
