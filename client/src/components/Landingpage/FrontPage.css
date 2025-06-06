@@ -27,3 +27,19 @@
   flex-direction: column;
   gap: 30px;
 }
+
+@media (max-width: 768px){
+  .firsttagline ,.secondtagline{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .Headlinediv{
+    gap: 10px;
+    position: relative;
+    top: 60px;
+  }
+  .parentdiv .navbarbtn{
+    position: relative;
+    top: 20px;
+  }
+}

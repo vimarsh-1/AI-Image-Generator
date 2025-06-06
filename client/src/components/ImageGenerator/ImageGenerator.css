@@ -1,14 +1,111 @@
-
-.generator {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #0a0a0a;;
+.parentdivImgGenerator {
+  background-color: #0a0a0a;
   height: 100vh;
+  overflow: hidden;
 }
-.image-container{
+.parentinsiderdiv{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.firstframe{
+  display: grid;
+  gap: 1rem;
+}
+.imggeneratebtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.headingAIpage {
+  color: #fff;
+  text-shadow: 0 0 8px #00f7ff;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+}
+.heading2AIpage {
+  color: gray;
+  text-shadow: 0 0 8px gray;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.headingAIpage1 {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 0 0 8px #00f7ff;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  display: inline-block;
+}
+.headingAIpage1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #00ffff; /* Neon color */
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  transition: none;
+}
+
+/* Animate on hover */
+.headingAIpage1:hover::after {
+  animation: neonUnderline 0.8s ease forwards;
+}
+
+/* Keyframes: underline grows from left to right, then fades */
+@keyframes neonUnderline {
+  0% {
+    width: 0;
+    left: 0;
+    opacity: 1;
+  }
+  70% {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+}
+.firstdivAIpage {
+  position: relative;
+  left: 60px;
+}
+.firstdivAIpage .navbarbtn {
+  position: relative;
+  left: 30%;
+  top: 30px;
+}
+.inputboxai {
+  height: 300px !important;
+  width: 500px !important;
+  background-color: black;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  border: 2px dashed #00f7ff;
+}
+.image-container {
   display: flex;
   flex-direction: column;
+  border: 2px dashed #00f7ff;
+  height: 600px;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.image-container .navbarbtn {
+  position: relative;
+  left: 5px;
 }
 .generator input {
   width: 300px;
@@ -36,4 +133,41 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .parentdivImgGenerator{
+    overflow: auto;
+    overflow-x: hidden;
+  }
+.firstdivAIpage{
+  padding: 30px;
+}
+.headingAIpage{
+  font-size: 1.5rem;
+}
+.inputboxai{
+  width: 100% !important;
+  height: 200px !important;
+}
+.heading2AIpage{
+  font-size: 0.8rem;
+}
+.parentinsiderdiv{
+  flex-direction: column;
+  gap: 0rem;
+}
+.firstframe{
+  padding: 30px;
+}
+.image-container{
+  height: auto;
+  background-color: #0a0a0a;
+  gap: 20px;
+}
+.output{
+  height: auto;
+  width: 300px;
+  margin-top: 10px;
+}
 }

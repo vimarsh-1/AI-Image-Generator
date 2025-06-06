@@ -35,7 +35,7 @@
 }
 
 .navbarbtn {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f !important;
   position: relative;
   left: -15px;
   color: #ffffff;
@@ -87,4 +87,10 @@
 
 .navbarbtn:hover::after {
   transform-origin: left;
+}
+
+@media (max-width: 768px){
+ .justify-content-end .navbarbtn{
+  display: none;
+ } 
 }
