@@ -18,9 +18,9 @@ const ImageGenerator = () => {
 
     setLoading(true);
     setImage(null);
-
+// http://localhost:5000/generate
     try {
-      const res = await axios.post("http://localhost:5000/generate", {
+      const res = await axios.post("https://ai-image-generator-gpkg.onrender.com/generate", {
         prompt,
       });
       setImage(res.data.image);
