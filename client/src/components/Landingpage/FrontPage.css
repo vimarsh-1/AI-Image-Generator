@@ -1,22 +1,24 @@
 .parentdiv {
-  background-image: url("../../Assets/mainbg.jpg");
+  /* background-image: url("../../Assets/mainbg.jpg"); */
+  background-color: black;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
+  overflow: hidden !important;
 }
 .firsttagline {
   font-size: 2.6rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  color: #fff;
+  color: whitesmoke;
   text-shadow: 0 0 8px #00f7ff;
 }
 .secondtagline {
   font-size: 2.6rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  color: #fff;
+  color: whitesmoke;
   text-shadow: 0 0 8px #00f7ff;
 }
 .Headlinediv {

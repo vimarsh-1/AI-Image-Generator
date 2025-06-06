@@ -2,6 +2,7 @@
   background-color: #0a0a0a;
   height: 100vh;
   overflow: hidden;
+  background-image: url('../../Assets/aiscreenbg.png');
 }
 .parentinsiderdiv{
   align-items: center;

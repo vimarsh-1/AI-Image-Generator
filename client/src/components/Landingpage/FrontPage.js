@@ -7,6 +7,7 @@ import rightarrow from "../../Assets/rightarrow.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Hyperspeed from "../Backgrounds/Hyperspeed";
 
 const FrontPage = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const FrontPage = () => {
   return (
     <div className="parentdiv">
       <NavBar />
+      <Hyperspeed />
       <div className="Headlinediv">
         <div className="firsttagline" data-aos="zoom-in" data-aos-delay={700}>
           Create. Imagine. Generate.
